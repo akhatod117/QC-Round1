@@ -118,7 +118,7 @@ def main():
         print()
 
         #print each cookie deemed to be most active on the given date
-        #if the list is empty, return 'No active cookies': this is also a valid output otherwise the user has no idea whether the program worked or not
+        #if the list is empty, return 'No active cookies': this is also a valid output to let the user know about cookie activity
         
         if most_active_cookies:
             for cookie in most_active_cookies:
