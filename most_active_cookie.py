@@ -103,20 +103,29 @@ def main():
         
         #established valid input
         #now need to run through the csv file
-
+        
+        #get .csv file name
         csv_name = input_array[1]
 
+        #create dictionary with cookie id as key, number of occurences as value
         cookie_dict = log_dictionary(csv_name)
 
 
-        #print most active cookies back to command line
+        #get the most active cookies as a lsit
         most_active_cookies = most_active(cookie_dict)
 
         #extra print statement for increased readability on command line.
         print()
 
-        for cookie in most_active_cookies:
-            print(cookie)
+        #print each cookie deemed to be most active on the given date
+        #if the list is empty, return 'No active cookies': this is also a valid output otherwise the user has no idea whether the program worked or not
+        
+        if most_active_cookies:
+            for cookie in most_active_cookies:
+                print(cookie)
+        else:
+            print('No active cookies')
+
 
 
 
