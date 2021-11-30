@@ -9,5 +9,5 @@ Quick note regarding input: For python, I'm using the standard Python commands t
 
 Example input:
 
-Enter command here: "./most_active_cookie cookie_log.csv -d 2018-12-08
+Enter command here: ./most_active_cookie cookie_log.csv -d 2018-12-08
 
