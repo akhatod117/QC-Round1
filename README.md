@@ -7,5 +7,7 @@
 Quick note regarding input: For python, I'm using the standard Python commands to get input from the user. Therefore there is a prompt for the input in which the input is entered.
 
 
-Here's an example: Enter command here: ./most_active_cookie cookie_log.csv -d 2018-12-08 
+Example input:
+
+Enter command here: "./most_active_cookie cookie_log.csv -d 2018-12-08
 
