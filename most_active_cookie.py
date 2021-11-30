@@ -77,11 +77,17 @@ def main():
             current_occurrences = cookie_dict[cookie]
 
             #set max_occurences to the max of itself and the current # of occurences
+            prev_max = max_occurrences
             max_occurrences = max(max_occurrences, current_occurrences)
 
             #if current occurences is the same as the max we've seen so far, most active cookie seen so far...add it to solutions list.
             if current_occurrences == max_occurrences:
                 active.append(cookie)
+
+            #additional case: remove 'old' max cookies if the new max has increased
+
+            if current_occurrences > prev_max:
+                active = [cookie]
 
         #now have gone through all relevant cookies, return the solutions
 
@@ -109,6 +115,7 @@ def main():
 
         #create dictionary with cookie id as key, number of occurences as value
         cookie_dict = log_dictionary(csv_name)
+
 
 
         #get the most active cookies as a lsit
